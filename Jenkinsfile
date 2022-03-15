@@ -19,7 +19,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
 
-                sh'''pip install GitPython 
+                sh'''pip install --upgrade autopep8
                 cd change
                 pwd
                 chmod +x script.sh
