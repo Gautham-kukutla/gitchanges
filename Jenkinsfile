@@ -22,10 +22,11 @@ pipeline {
                 sh'''pip install --upgrade autopep8
                 cd change
                 pwd
+                git config --global user.email "gautham.kukutla@gmail.com"
+                git config --global user.name "Gautham-kukutla"
                 chmod +x script.sh
                 ./script.sh
-                git commit -am "Commit done"
-                git push "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Gautham-kukutla/gitchanges.git"
+                
                 '''
                 }}
         }
