@@ -23,7 +23,9 @@ pipeline {
                 cd change
                 pwd
                 chmod +x script.sh
-                ./script.sh     
+                ./script.sh
+                git commit -am "Commit done"
+                git push "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Gautham-kukutla/gitchanges.git"
                 '''
                 }}
         }
