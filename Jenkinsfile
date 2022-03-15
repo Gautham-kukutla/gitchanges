@@ -5,12 +5,12 @@ pipeline {
         stage('Clone') {
             steps {  
                 sh'''rm -rf task
-                git clone https://github.com/Gautham-kukutla/pythongit2.git task
+                git clone https://github.com/Gautham-kukutla/gitchanges.git change
                 '''
             }}
         stage('Creating Files') {
             steps {   
-                sh '''cd task
+                sh '''cd change
                 touch file2.txt
                 '''
             }
@@ -20,7 +20,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
 
                 sh'''pip install GitPython 
-                cd task
+                cd change
                 pwd
                 python3 python_script.py
                 chmod +x script2.sh
