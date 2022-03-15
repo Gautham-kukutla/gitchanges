@@ -8,7 +8,6 @@ pipeline {
                 git clone https://github.com/Gautham-kukutla/gitchanges.git change
                 '''
             }}
-        }
         stage('Git Modification Check') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
