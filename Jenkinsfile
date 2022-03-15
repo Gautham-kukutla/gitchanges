@@ -8,12 +8,6 @@ pipeline {
                 git clone https://github.com/Gautham-kukutla/gitchanges.git change
                 '''
             }}
-        stage('Creating Files') {
-            steps {   
-                sh '''cd change
-                touch file1.txt
-                '''
-            }
         }
         stage('Git Modification Check') {
             steps {
