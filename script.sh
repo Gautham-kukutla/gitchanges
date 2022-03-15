@@ -12,6 +12,8 @@ cat file.txt
  then   rm file.txt
         git add .
         git commit -am "Commit done"
+        git config user.email "gautham.kukutla@gmail.com"
+        git config user.name "Gautham-kukutla"
         git push "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Gautham-kukutla/gitchanges.git"
  else  echo "no changes done"
  fi
