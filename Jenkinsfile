@@ -25,3 +25,13 @@ pipeline {
         }
     }
 }
+post { 
+        always { 
+            echo 'This is post always'
+        }
+    unsuccessful{
+        echo 'this is post unsuccessful'
+    }
+    success { 
+            echo 'This is post success'
+        }}
