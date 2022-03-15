@@ -11,7 +11,7 @@ pipeline {
         stage('Creating Files') {
             steps {   
                 sh '''cd change
-                touch file2.txt
+                touch file1.txt
                 '''
             }
         }
