@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {  
-                sh'''rm -rf task
+                sh'''rm -rf change
                 git clone https://github.com/Gautham-kukutla/gitchanges.git change
                 '''
             }}
@@ -22,9 +22,8 @@ pipeline {
                 sh'''pip install GitPython 
                 cd change
                 pwd
-                python3 python_script.py
-                chmod +x script2.sh
-                ./script2.sh     
+                chmod +x script.sh
+                ./script.sh     
                 '''
                 }}
         }
