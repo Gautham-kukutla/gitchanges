@@ -9,8 +9,7 @@ pipeline {
                 '''
             }}
         stage('Git Modification Check') {
-            steps {
-                
+            steps {             
                 sh'''pip install --upgrade autopep8
                 cd change
                 pwd
@@ -18,9 +17,7 @@ pipeline {
                 git config --global user.name "Gautham-kukutla"
                 chmod +x script.sh'''
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-                sh ''' echo "$MYVARNAME_USR"
-                ./script.sh 
-                      '''       
+                sh ' ./script.sh '         
                 }}
         }
     }
