@@ -9,8 +9,13 @@ pipeline {
                 '''
             }}
         stage('Git Modification Check') {
-            steps {             
-                sh'''pip install --upgrade autopep8
+             environment { 
+                AN_ACCESS_KEY = credentials('gittoken') 
+            }
+            steps {       
+                sh'''
+                printenv
+                pip install --upgrade autopep8
                 cd change
                 pwd
                 git config --global user.email "gautham.kukutla@gmail.com"
