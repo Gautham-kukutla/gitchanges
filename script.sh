@@ -6,6 +6,6 @@
  then   git commit -am "Automated autopep8 fixes"
         git config user.email "gautham.kukutla@gmail.com"
         git config user.name "Gautham-kukutla"
-        git push "https://github.com/Gautham-kukutla/gitchanges.git"
+        git push "https://{GIT_USERNAME}:{GIT_PASSWORD}@github.com/{GIT_USERNAME}/gitchanges.git"
  else  echo "no changes done"
  fi
