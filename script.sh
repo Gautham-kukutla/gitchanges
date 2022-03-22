@@ -1,4 +1,5 @@
 #!/bin/bash
+cd change
 #apt-get install python-autopep8
  autopep8 --exit-code --recursive --in-place --aggressive --aggressive .
  pwd
