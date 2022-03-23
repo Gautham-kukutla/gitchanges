@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Clone') {
             steps {  
-                sh'''rm -rf change
-                git clone https://github.com/Gautham-kukutla/gitchanges.git change
+                sh'''rm -rf gitchanges
+                git clone https://github.com/Gautham-kukutla/gitchanges.git
                 '''
             }}
         stage('Git Modification Check') {
