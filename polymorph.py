@@ -1,16 +1,16 @@
 class Parrot:
 
-    def fly(self):
+    def fly( self):
         print("Parrot can fly")
 
-    def swim(self):
+    def swim( self):
         print("Parrot can't swim")
 
 
 class Penguin:
 
     def fly(self):
-        print("Penguin can't fly")
+        print( "Penguin can't fly")
 
     def swim(self):
         print("Penguin can swim")
