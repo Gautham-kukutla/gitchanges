@@ -19,10 +19,9 @@ pipeline {
                 cd change
                 pwd
                 git config --global user.email "gautham.kukutla@gmail.com"
-                git config --global user.name "Gautham-kukutla"
-                chmod +x script.sh'''
+                git config --global user.name "Gautham-kukutla" '''
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-                sh ' ./script.sh '         
+                sh ' ./script3.sh '         
                 }}
         }
     }
