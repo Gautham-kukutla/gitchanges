@@ -10,7 +10,7 @@ git status | grep ".py$" > file2
 if  [ -s file2 ]
 then  rmfile2
 	git commit -m "autopep8 changes done"
-	git push "https://github.com/Gautham-kukutla/gitchanges.git"
+	git push "https://{GIT_USERNAME}:{GIT_PASSWORD}@github.com/{GIT_USERNAME}/gitchanges.git"
 else	rm file2
 	echo "no autopep8 changes"
 fi
