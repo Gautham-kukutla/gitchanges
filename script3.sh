@@ -1,5 +1,6 @@
 #!/bin/bash
 var=0
+cd gitchanges
 find . -name '*.py' > file2
 cat file2
 while read -r line 
