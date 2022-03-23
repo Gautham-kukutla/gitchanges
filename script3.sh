@@ -1,6 +1,7 @@
 #!/bin/bash
 var=0
 find . -name '*.py' > file2
+cat file2
 while read -r line 
 do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
    if [ $? -eq 2 ] 
