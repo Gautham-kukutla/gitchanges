@@ -8,7 +8,7 @@ do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
 done < file2
 git status | grep ".py$" > file2
 if  [ -s file2 ]
-then  rmfile2
+then  rm file2
 	git commit -m "autopep8 changes done"
 	git push "https://{GIT_USERNAME}:{GIT_PASSWORD}@github.com/{GIT_USERNAME}/gitchanges.git"
 else	rm file2
