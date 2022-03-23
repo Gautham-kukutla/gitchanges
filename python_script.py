@@ -1,9 +1,9 @@
 import git
 import os
-print("Repo before")
+print( "Repo before")
 repo = git.Repo('/var/lib/jenkins/workspace/pythongit/task')
-print("Repo after")
-print('Remotes:')
+print( "Repo after")
+print( 'Remotes:')
 for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
 print("remote after")
