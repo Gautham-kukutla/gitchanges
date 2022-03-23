@@ -1,7 +1,7 @@
 #!/bin/bash
 find . -name '*.py' > file2
 while read -r line 
-do autopep8 --in-place --exit-code --aggressiev --aggressive "$line"
+do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
    if [ $? -eq 2 ] 
 	then	git add "$line"
    fi
