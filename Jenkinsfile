@@ -14,7 +14,6 @@ pipeline {
             }
             steps {       
                 sh'''
-                printenv
                 pip install --upgrade autopep8
                 cd change
                 pwd
