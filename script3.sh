@@ -8,6 +8,7 @@ do autopep8 --in-place --exit-code --aggressive --aggressive "$line"
 		git add "$line"
    fi
 done < file2
+git status
 #git status | grep ".py$" > file2
 if  [ "$var" -eq 1 ]
 then  rm file2
