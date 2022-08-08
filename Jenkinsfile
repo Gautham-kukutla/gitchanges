@@ -21,7 +21,7 @@ pipeline {
                 git config --global user.name "Gautham-kukutla" '''
                 withCredentials([usernamePassword(credentialsId: 'gittoken', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                 sh ' ./script3.sh '        
-                }}*/
-        }
+                }}
+        }*/
     }
 }
