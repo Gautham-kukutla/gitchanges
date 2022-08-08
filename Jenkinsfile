@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {  
-                sh "ls"
+                bat "dir"
                 //sh'''rm -rf gitchanges
                 //git clone https://github.com/Gautham-kukutla/gitchanges.git
                 //'''
