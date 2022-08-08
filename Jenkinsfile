@@ -5,6 +5,7 @@ pipeline {
         stage('Clone') {
             steps {  
                 bat "dir"
+                cleanWs()
                 //sh'''rm -rf gitchanges
                 //git clone https://github.com/Gautham-kukutla/gitchanges.git
                 //'''
